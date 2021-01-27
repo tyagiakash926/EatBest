@@ -1,3 +1,4 @@
+const bookingModel = require("../Model/bookingModel");
 const planModel = require("../Model/plansModel");
 
 async function getHomePage(req,res){
@@ -72,7 +73,7 @@ async function getPaymentHistoryPage(req,res){
            let bookingObj =  await bookingModel.findById(bookedPlanId);
            let myBookedPlans = bookingObj.bookedPlans;
            console.log(myBookedPlans);
-        //    res.render("paymentHistory.pug",{plans:myBookedPlans});
+           res.render("paymentHistory.pug",{plans:myBookedPlans});
         }
     }
     catch(error){
