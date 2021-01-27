@@ -20,10 +20,11 @@ ChangepwBtn.addEventListener("click",async function(e){
             console.log(obj);
             pw.value="";
             cpw.value=""
-            if(obj.data.data){
+            if(obj.data.message){
                 window.location.href = "/login";
             }else{
                 message.innerHTML = obj.data.message;
+                window.location.href = "/login";
             }
         }else{
             message.innerHTML = "Password didn't Match";
