@@ -71,9 +71,34 @@ async function checkoutComplete(req,res){
 }
 
 async function createNewBooking(userEmail, planId) {
-  console.log("inside of new booking");
-  console.log(userEmail);
-  console.log(planId);
+ try{
+    const user = await userModel.findOne({email:userEmail});
+    const plan = await planModel.findById(planId);
+    const userId = user["_id"];
+    if(user.bookedPlanId==undefined){
+      const bookingOrder = {
+        userId : userId,
+        bookedPlans : [{planId:planId ,planImage:plan.planImage ,name:plan.name , currentPrice:plan.price , address:userEmail}]
+      }
+      const newBookingOrder = await bookingModel.create(bookingOrder);
+      user.bookedPlanId =  newBookingOrder["_id"];
+      await user.save({validateBeforeSave:false});
+    }else{
+      const newBookedPlan = {
+        planId:planId ,
+        planImage:plan.planImage ,
+        name:plan.name ,
+        currentPrice:plan.price ,
+        address:userEmail
+      }
+      const userBookingObject = await bookingModel.findById(user.bookedPlanId);
+      userBookingObject.bookedPlans.push(newBookedPlan);
+      await userBookingObject.save();
+    }
+ }
+ catch(error){
+   return error;
+ }
 }
 
 module.exports.createPaymentSession = createPaymentSession;
