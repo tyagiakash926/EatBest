@@ -31,3 +31,6 @@ resetB.addEventListener("click",function(){
 forgetB.addEventListener("click",function(){
     bcontainer.classList.remove("active");
 })
+function myfunction(){
+    preloader.style.display="none";
+  }

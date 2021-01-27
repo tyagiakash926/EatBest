@@ -3,6 +3,10 @@ let pw = document.querySelector(".password-reset");
 let cpw = document.querySelector(".Password-cfrm");
 let message = document.querySelector("#message-password");
 
+function myfunction(){
+    preloader.style.display="none";
+  }
+
 ChangepwBtn.addEventListener("click",async function(e){
     e.preventDefault();
     try{
