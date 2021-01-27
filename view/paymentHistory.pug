@@ -1,0 +1,35 @@
+extends base.pug
+block content
+ .main-container
+  .glass-container
+    .dashboard-section
+      .dashboard-section-div-1
+        .dashboard-section-div-1-button
+          .dashboard-section-div-1-button-icon
+            i.fas.fa-archway
+          .dashboard-section-div-1-button-url
+            | Home
+        .dashboard-section-div-1-button
+          .dashboard-section-div-1-button-icon
+            i.fas.fa-comments
+          .dashboard-section-div-1-button-url
+            | review
+        .dashboard-section-div-1-button
+          .dashboard-section-div-1-button-icon
+            i.fas.fa-info-circle
+          .dashboard-section-div-1-button-url
+            | Details
+        .dashboard-section-div-1-button
+          .dashboard-section-div-1-button-icon
+            i.fas.fa-sign-in-alt
+          .dashboard-section-div-1-button-url
+            | Login
+      .dashboard-section-div-2
+        .dashboard-section-div-2-running-svg
+          img(src='./undraw_street_food_hm5i 1 (1).svg')
+        .dashboard-section-div-2-heading
+          h1 Faster Delivery!
+          h2 Learn more
+    .plans-section
+      each plan in plans
+       include paymentcard.pug
