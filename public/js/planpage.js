@@ -11,7 +11,7 @@ function myfunction(){
 
   })
   detailurl.addEventListener("click",function(){
-    window.location.href = "/";
+    window.location.href = "/details";
 
   })
   loginurl.addEventListener("click",function(){
@@ -19,7 +19,7 @@ function myfunction(){
 
   })
   reviewurl.addEventListener("click",function(){
-    window.location.href = "/";
+    window.location.href = "/reviews";
 
   })
   bucket.addEventListener("click",function(){

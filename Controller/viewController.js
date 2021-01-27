@@ -1,7 +1,6 @@
 const bookingModel = require("../Model/bookingModel");
 const planModel = require("../Model/plansModel");
 const userModel = require("../Model/usersModel");
-
 async function getHomePage(req,res){
     let plans = await planModel.find();
     plans = plans.splice(0,3);
@@ -68,13 +67,11 @@ async function getPaymentHistoryPage(req,res){
         let bookedPlanId = user.bookedPlanId;
         console.log(bookedPlanId);
 
-        if(bookedPlanId==undefined){
-            window.alert("Order something to check payment history");
-        }else{
-           let bookingObj =  await bookingModel.findById(bookedPlanId);
-           let myBookedPlans = bookingObj.bookedPlans;
-           console.log(myBookedPlans);
-           res.render("paymentHistory.pug",{plans:myBookedPlans});
+        if(bookedPlanId!=undefined){
+            let bookingObj =  await bookingModel.findById(bookedPlanId);
+            let myBookedPlans = bookingObj.bookedPlans;
+            console.log(myBookedPlans);
+            res.render("paymentHistory.pug",{plans:myBookedPlans});
         }
     }
     catch(error){
