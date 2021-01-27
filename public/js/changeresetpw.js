@@ -12,7 +12,7 @@ ChangepwBtn.addEventListener("click",async function(e){
             let token = document.URL.split("/");
             token = token[token.length-1];
             // console.log(token);
-            let obj = await axios.patch( `http://localhost:3000/api/users/resetpassword/${token}` , {password:pw.value , confirmPassword:cpw.value});
+            let obj = await axios.patch( `https://eat-beast.herokuapp.com/api/users/resetpassword/${token}` , {password:pw.value , confirmPassword:cpw.value});
             console.log(obj);
             pw.value="";
             cpw.value=""

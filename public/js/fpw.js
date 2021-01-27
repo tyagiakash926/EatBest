@@ -13,7 +13,7 @@ forgetbtn.addEventListener("click",async function(e){
         e.preventDefault(); // prevent page refresh
 
         if(emailF.value){
-            let obj = await axios.post( "http://localhost:3000/api/users/forgetpassword" , {email:emailF.value });
+            let obj = await axios.post( "https://eat-beast.herokuapp.com/api/users/forgetpassword" , {email:emailF.value });
             console.log(obj);
             message.innerHTML = obj.data.message;
             emailF.value="";

@@ -72,6 +72,8 @@ async function getPaymentHistoryPage(req,res){
             let myBookedPlans = bookingObj.bookedPlans;
             console.log(myBookedPlans);
             res.render("paymentHistory.pug",{plans:myBookedPlans});
+        }else{
+            res.redirect('/plans');
         }
     }
     catch(error){
