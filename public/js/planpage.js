@@ -1,7 +1,7 @@
 function myfunction(){
     preloader.style.display="none";
   }
-
+  let bucket = document.querySelector(".plans-section-1-cart");
   let homeurl = document.getElementById('homeurl');
   let detailurl = document.getElementById('detailurl');
   let reviewurl = document.getElementById('reviewurl');
@@ -22,6 +22,10 @@ function myfunction(){
     window.location.href = "/";
 
   })
+  bucket.addEventListener("click",function(){
+    window.location.href="/paymenthistory";
+  })
+
 
 
   let namess = ["Eatland" , "BeastLand" , "Eat-Beast" , "Khana"];            

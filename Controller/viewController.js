@@ -60,6 +60,14 @@ async function getDetailsPage(req,res){
         console.log(error);
     } 
 } 
+async function getPaymentHistoryPage(req,res){
+    try{
+        console.log(req.id);
+    }
+    catch(error){
+        console.log(error);
+    } 
+}
 
 
 module.exports.getHomePage = getHomePage;
@@ -70,3 +78,4 @@ module.exports.getResetPasswordPage = getResetPasswordPage;
 module.exports.getProfilePage = getProfilePage;
 module.exports.getReviewPage= getReviewPage;
 module.exports.getDetailsPage=getDetailsPage;
+module.exports.getPaymentHistoryPage=getPaymentHistoryPage;
