@@ -21,7 +21,7 @@ ChangepwBtn.addEventListener("click",async function(e){
             pw.value="";
             cpw.value=""
             if(obj.data.data){
-                window.location.href = "/";
+                window.location.href = "/login";
             }else{
                 message.innerHTML = obj.data.message;
             }
