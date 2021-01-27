@@ -64,12 +64,15 @@ async function getPaymentHistoryPage(req,res){
     try{
         let user = await userModel.findById(req.id);
         let bookedPlanId = user.bookedPlanId;
+        console.log(bookedPlanId);
+
         if(bookedPlanId==undefined){
             alert("Order something to check payment history");
         }else{
            let bookingObj =  await bookingModel.findById(bookedPlanId);
            let myBookedPlans = bookingObj.bookedPlans;
-           res.render("paymentHistory.pug",{plans:myBookedPlans});
+           console.log(myBookedPlans);
+        //    res.render("paymentHistory.pug",{plans:myBookedPlans});
         }
     }
     catch(error){
