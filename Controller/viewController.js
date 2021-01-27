@@ -69,7 +69,7 @@ async function getPaymentHistoryPage(req,res){
         console.log(bookedPlanId);
 
         if(bookedPlanId==undefined){
-            alert("Order something to check payment history");
+            window.alert("Order something to check payment history");
         }else{
            let bookingObj =  await bookingModel.findById(bookedPlanId);
            let myBookedPlans = bookingObj.bookedPlans;
