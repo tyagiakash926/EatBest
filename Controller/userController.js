@@ -1,4 +1,3 @@
-const { error } = require("jquery");
 const userModel = require("../Model/usersModel");
 
 
