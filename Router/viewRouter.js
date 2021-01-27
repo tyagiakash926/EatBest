@@ -3,7 +3,7 @@ const { isLoggedIn ,logout } = require("../Controller/authController");
 const { getDemoPage, getHomePage, getLoginPage, getPlansPage,getDetailsPage ,getForgetPasswordPage,getReviewPage, getResetPasswordPage ,getProfilePage} = require("../Controller/viewController");
 const viewRouter = express.Router();
 viewRouter.use(isLoggedIn);
-viewRouter.route("").get(getHomePage);
+viewRouter.route("/").get(getHomePage);
 viewRouter.route("/details").get(getDetailsPage);
 viewRouter.route("/reviews").get(getReviewPage);
 viewRouter.route("/logout").get(logout);
