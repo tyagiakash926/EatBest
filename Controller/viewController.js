@@ -1,5 +1,6 @@
 const bookingModel = require("../Model/bookingModel");
 const planModel = require("../Model/plansModel");
+const userModel = require("../Model/usersModel");
 
 async function getHomePage(req,res){
     let plans = await planModel.find();
