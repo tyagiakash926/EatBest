@@ -13,6 +13,8 @@ async function createPaymentSession(req , res){
         // session object isko nhi chedna !!!
         const session = await stripeObj.checkout.sessions.create({
             payment_method_types: ['card'],
+            customer_email: user.email,
+            client_reference_id: planId,
             line_items: [
               {
                 price_data: {
@@ -26,8 +28,8 @@ async function createPaymentSession(req , res){
               },
             ],
             mode: 'payment',
-            success_url: 'http://localhost:3000/',
-            cancel_url: 'http://localhost:3000/',
+            success_url: 'https://eat-beast.herokuapp.com/',
+            cancel_url: 'https://eat-beast.herokuapp.com/',
         })
         res.json({
             session
@@ -41,8 +43,38 @@ async function createPaymentSession(req , res){
     }
 }
 
-async function createNewBooking(userEmail, planId) {
+
+async function checkoutComplete(req,res){
+  try{
+    const END_POINT_KEY = process.env.END_POINT_KEY;
+    // console.log("Checkout complete ran !!");
+    // console.log("Request object");
+    // console.log(req);
+    const stripeSignature = req.headers["stripe-signature"];
   
+    console.log("endpoint key = " , END_POINT_KEY);
+    console.log("stripeSign = " , stripeSignature);
+    console.log("Req.bdoy =>" , req.body);
+  
+    // if(req.body.data.type == "checkout.session.completed"){
+      const userEmail = req.body.data.object.customer_email;
+      const planId = req.body.data.object.client_reference_id;
+      await createNewBooking(userEmail , planId); 
+    // }
+  }
+  catch(error){
+    res.json({
+      error
+    })
+  }
+
+}
+
+async function createNewBooking(userEmail, planId) {
+  console.log("inside of new booking");
+  console.log(userEmail);
+  console.log(planId);
 }
 
 module.exports.createPaymentSession = createPaymentSession;
+module.exports.checkoutComplete = checkoutComplete;
