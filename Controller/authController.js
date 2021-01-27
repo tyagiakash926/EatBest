@@ -102,7 +102,7 @@ async function forgetpassword(req,res){
           console.log(token);
           await user.save({validateBeforeSave:false});
           // console.log(updatedUser);
-            let resetLink = `http://localhost:3000/resetpassword/${token}`;
+            let resetLink = `https://eat-beast.herokuapp.com/resetpassword/${token}`;
             let message = {
               from:GMAIL_ID,
               to:email,
