@@ -27,6 +27,18 @@ window.addEventListener("load" , function(){
 }
 })
 
+let buynow_btn= document.querySelector(".buynow-btn");
+let explore_btn = document.querySelector(".explore-btn");
+let discount_template_btn=document.querySelector(".discount-template-btn");
+buynow_btn.addEventListener("click",function(){
+  window.location.href("/plans");
+})
+explore_btn.addEventListener("click",function(){
+  window.location.href("/plans");
+})
+discount_template_btn.addEventListener("click",function(){
+  window.location.href("/plans");
+})
 function myfunction(){
   preloader.style.display="none";
 }
