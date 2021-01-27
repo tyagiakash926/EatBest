@@ -1,0 +1,31 @@
+.plan-describe-page-plus-review-page 
+ .plan-describe-page
+   .plan-describe-page-detail-image
+     .plan-describe-page-detail
+       .plan-describe-page-detail-heading
+         h2 #{plan.name}
+         h1 With specail sauces
+       .plan-describe-page-detail-subheading
+         p
+           | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae odio voluptate earum asdf asd hhhhh sdhjsdjs dbsjbjs
+       .plan-describe-page-detail-button
+         .plan-describe-page-detail-price $#{plan.price}
+         .plan-describe-page-detail-buyme(planId=`${plan["_id"]}`)
+           i.fa.fa-shopping-cart(aria-hidden='true')
+           |  Buy Now
+       .plan-describe-page-review-button(planId=`${plan["_id"]}`) Want to Rate us!
+     .plan-describe-page-image
+       img(src=`${plan["planImage"]}`)
+ .plans-describe-section-with-review
+  .plans-describe-section-with-review-1
+    img(src=`${plan["planImage"]}`)
+  .plans-describe-section-with-review-2
+    .my-review-rating
+      | Ratings  : 
+      input#my-review-rating(type='text')
+    .my-review-message
+      | Message :
+      input#my-review-message(type='text')
+    .my-review-section-submit(planId=`${plan["_id"]}`) Submit
+    .my-review-section-cancel cancel
+

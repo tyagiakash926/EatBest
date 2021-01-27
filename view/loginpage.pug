@@ -1,0 +1,51 @@
+extends base.pug
+block header
+  include homepageheader.pug
+block content
+ .big-container
+  #akash.container
+    .container
+      .form-container.sign-up-container
+        form(action='#')
+          h1 Create Account
+          .social-container
+            a.social(href='#')
+              i.fab.fa-facebook-f
+            a.social(href='#')
+              i.fab.fa-google-plus-g
+            a.social(href='#')
+              i.fab.fa-linkedin-in
+          span or use your email for registration
+          input#name(type='text' placeholder='Name')
+          input#email-su(type='email' placeholder='Email')
+          input#password-su(type='password' placeholder='Password')
+          input#confirm-password-su(type='password' placeholder='Confirm Password')
+          button.SIGNUP-btn Sign Up
+      .form-container.sign-in-container
+        form(action='#')
+          h1 Sign in
+          .social-container
+            a.social(href='#')
+              i.fab.fa-facebook-f
+            a.social(href='#')
+              i.fab.fa-google-plus-g
+            a.social(href='#')
+              i.fab.fa-linkedin-in
+          span or use your account
+          input#email(type='email' placeholder='Email')
+          input#password(type='password' placeholder='Password')
+          a(href='/forgetpassword') Forgot your password?
+          span#message 
+          button.SIGNIN-btn Sign In
+      .overlay-container
+        .overlay
+          .overlay-panel.overlay-left
+            h1 Welcome Back!
+            p To keep connected with us please login with your personal info
+            button#signIn.ghost Sign In
+          .overlay-panel.overlay-right
+            h1 Hello, Friend!
+            p Enter your personal details and start journey with us
+            button#signUp.ghost Sign Up
+block scripts
+ script(src="./js/login.js") 

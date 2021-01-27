@@ -1,0 +1,9 @@
+.plans-section-2-plans-plan-no-1
+  .plans-section-2-plans-plan-no-1-image
+    img(src=`${plan["planImage"]}`)
+  .plans-section-2-plans-plan-no-1-heading
+    h2 #{plan.name}
+    p Deleious,friedtiiki,mast chaap khaoo or mje karo
+  .plans-section-2-plans-plan-no-1-price
+    .plans-section-2-plans-plan-no-1-pricing $ #{plan.price}
+    .plans-section-2-plans-plan-no-1-buynow(planId=`${plan["_id"]}`)  + 

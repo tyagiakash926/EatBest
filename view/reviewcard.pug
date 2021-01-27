@@ -1,0 +1,16 @@
+-const j = `${review.rating}`
+.col-sm-6(style='margin: 1%; width: 30%;')
+  .testimonial-wrap
+    .image-plus-name
+      img(src=`${review.userImage}` alt='')
+    .testimonial
+      p
+        | #{review.message}
+    cite.testimonial-author
+      span.name
+        strong(style='color: black;') #{review.userName}
+        |                       #{review.bookedOn}
+      span.stars
+        - for (var i = 0; i < j ; ++i) {
+          i.fa.fa-star
+        - }

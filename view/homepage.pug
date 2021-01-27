@@ -1,0 +1,125 @@
+extends base.pug
+block header
+  include homepageheader.pug
+block content
+ .landing-page
+  .landing-page-cotent
+    .landing-page-written-content
+      .landing-page-written-content-title
+        h1
+          | Deliousness 
+          br
+          |  jumpinng 
+          span#changingtext
+            | into 
+            br
+            |  the mouth
+      .landing-page-written-content-subtitle
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo ipsa sequi iure ad consequuntur rem inventore quos.
+      .landing-page-written-content-Explore
+        .buynow-btn
+          | Buy 
+          i.fa.fa-shopping-cart(aria-hidden='true')
+        .explore-btn
+          | Explore 
+          i.fab.fa-wpexplorer
+    .landing-page-image-content
+      .img-changer
+  .lower-section-landing-page
+    .lower-section-landing-page-heading Traditional Services
+    .lower-section-landing-page-heading-icons-heading
+      .lower-section-landing-page-heading-icons-chote
+        i.fas.fa-less-than
+      .lower-section-landing-page-heading-icons
+        img(src='https://img.icons8.com/color/48/000000/pizza-five-eighths.png')
+        h1 Tasty Pizza's
+      .lower-section-landing-page-heading-icons
+        img(src='https://img.icons8.com/color/48/000000/greek-salad.png')
+        h1 Salad
+      .lower-section-landing-page-heading-icons
+        img(src='https://img.icons8.com/color/48/000000/refreshments.png')
+        h1 Burger & Drink's
+      .lower-section-landing-page-heading-icons
+        img(src='https://img.icons8.com/color/48/000000/thanksgiving.png')
+        h1 Chicken Fry
+      .lower-section-landing-page-heading-icons-chote
+        i.fas.fa-greater-than
+ .features
+   .features-heading
+     h1 Our Features for member
+     p A new line of tasty specialites rich in fiber and vegetable protien is born 
+   .features-templates
+     .features-templates-info
+       .features-templates-info-icon
+         img(src='https://img.icons8.com/color/48/000000/planner.png')
+       .features-templates-info-content
+         h1 24*7
+         p
+           | Never cook again ! We really mean that. Our
+           | Subcription plan coverage 365 days coverage. You can
+           | choose any plan and order flexibly in your style!
+     .features-templates-info
+       .features-templates-info-icon
+         img(src='https://img.icons8.com/color/48/000000/motorcycle-delivery-multiple-boxes.png')
+       .features-templates-info-content
+         h1 After 30min Free
+         p
+           | You're just 20 minutes away from your delicious Food and Super healty meals
+           | delivery to your place. If we are not able to provide in 30 minutes then
+           | the delecious food will Free Of Cost!!
+     .features-templates-info
+       .features-templates-info-icon
+         img(src='https://img.icons8.com/color/48/000000/vegan-food.png')
+       .features-templates-info-content
+         h1 100% Desi
+         p
+           | All of our vegetables are organic , fresh and local. Animals
+           | all raised with adding Hormones and antibiotic. Good for health ,
+           | Enviroment , and also taste better!!
+ .upper-svg-discount-section
+   svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320')
+     path(fill='#735BF3' fill-opacity='1' d='M0,128L11.4,128C22.9,128,46,128,69,160C91.4,192,114,256,137,282.7C160,309,183,299,206,293.3C228.6,288,251,288,274,282.7C297.1,277,320,267,343,250.7C365.7,235,389,213,411,218.7C434.3,224,457,256,480,256C502.9,256,526,224,549,176C571.4,128,594,64,617,48C640,32,663,64,686,96C708.6,128,731,160,754,149.3C777.1,139,800,85,823,90.7C845.7,96,869,160,891,165.3C914.3,171,937,117,960,101.3C982.9,85,1006,107,1029,122.7C1051.4,139,1074,149,1097,170.7C1120,192,1143,224,1166,208C1188.6,192,1211,128,1234,133.3C1257.1,139,1280,213,1303,234.7C1325.7,256,1349,224,1371,186.7C1394.3,149,1417,107,1429,85.3L1440,64L1440,320L1428.6,320C1417.1,320,1394,320,1371,320C1348.6,320,1326,320,1303,320C1280,320,1257,320,1234,320C1211.4,320,1189,320,1166,320C1142.9,320,1120,320,1097,320C1074.3,320,1051,320,1029,320C1005.7,320,983,320,960,320C937.1,320,914,320,891,320C868.6,320,846,320,823,320C800,320,777,320,754,320C731.4,320,709,320,686,320C662.9,320,640,320,617,320C594.3,320,571,320,549,320C525.7,320,503,320,480,320C457.1,320,434,320,411,320C388.6,320,366,320,343,320C320,320,297,320,274,320C251.4,320,229,320,206,320C182.9,320,160,320,137,320C114.3,320,91,320,69,320C45.7,320,23,320,11,320L0,320Z')
+ .discount-template
+   .discount-template-heading
+     h1
+       | Get 
+       span  10 % 
+       |  off on your 
+       br
+       |  first Order
+   .discount-template-subheading
+     p From the company to all guest or first time visitor
+   .discount-template-btn Order now
+ .lower-svg-discount-section
+   svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320')
+     path(fill='#735BF3' fill-opacity='1' d='M0,128L11.4,128C22.9,128,46,128,69,160C91.4,192,114,256,137,282.7C160,309,183,299,206,293.3C228.6,288,251,288,274,282.7C297.1,277,320,267,343,250.7C365.7,235,389,213,411,218.7C434.3,224,457,256,480,256C502.9,256,526,224,549,176C571.4,128,594,64,617,48C640,32,663,64,686,96C708.6,128,731,160,754,149.3C777.1,139,800,85,823,90.7C845.7,96,869,160,891,165.3C914.3,171,937,117,960,101.3C982.9,85,1006,107,1029,122.7C1051.4,139,1074,149,1097,170.7C1120,192,1143,224,1166,208C1188.6,192,1211,128,1234,133.3C1257.1,139,1280,213,1303,234.7C1325.7,256,1349,224,1371,186.7C1394.3,149,1417,107,1429,85.3L1440,64L1440,0L1428.6,0C1417.1,0,1394,0,1371,0C1348.6,0,1326,0,1303,0C1280,0,1257,0,1234,0C1211.4,0,1189,0,1166,0C1142.9,0,1120,0,1097,0C1074.3,0,1051,0,1029,0C1005.7,0,983,0,960,0C937.1,0,914,0,891,0C868.6,0,846,0,823,0C800,0,777,0,754,0C731.4,0,709,0,686,0C662.9,0,640,0,617,0C594.3,0,571,0,549,0C525.7,0,503,0,480,0C457.1,0,434,0,411,0C388.6,0,366,0,343,0C320,0,297,0,274,0C251.4,0,229,0,206,0C182.9,0,160,0,137,0C114.3,0,91,0,69,0C45.7,0,23,0,11,0L0,0Z')
+ .featured-plan
+   .featured-plan-1
+     .featured-plan-1-1
+       .featured-plan-1-1-heading
+         h1
+           | Featured 
+           span item
+       .featured-plan-1-1-subheading
+         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae delectus,.
+       .featured-plan-1-1-rating-price
+         .featured-plan-1-1-rating
+           i.fa.fa-star(aria-hidden='true')
+           i.fa.fa-star(aria-hidden='true')
+           i.fa.fa-star(aria-hidden='true')
+           i.fa.fa-star(aria-hidden='true')
+           i.fa.fa-star(aria-hidden='true')
+         .featured-plan-1-1-price
+           .featured-plan-1-1-price-heading $5.84
+           .featured-plan-1-1-price-buynow(planId="600fa46822056a55980b2bc0") order now
+     .featured-plan-1-2
+       img(src='./images/kisspng-hamburger-fried-chicken-chicken-sandwich-fast-food-hamburger-5a694e36561572.4592676415168507423526.png' alt='')
+   .featured-plan-2
+     .lower-section-feature-plan-icons-chote
+       i.fas.fa-less-than
+     .lower-section-feature-plan-icons-chote
+       i.fas.fa-greater-than
+append scripts
+ script(src="https://js.stripe.com/v3/")
+ script(src="js/buyplan.js")

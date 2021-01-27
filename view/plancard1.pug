@@ -1,0 +1,39 @@
+.plan-describe-page-plus-review-page 
+ .featured-plan
+    .featured-plan-1
+      .featured-plan-1-1
+        .featured-plan-1-1-heading
+          h1
+            | Featured 
+            span item
+        .featured-plan-1-1-subheading
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae delectus,.
+        .featured-plan-1-1-rating-price
+          .featured-plan-1-1-rating
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+          .featured-plan-1-1-price
+            .featured-plan-1-1-price-heading $#{plan.price}
+            .featured-plan-1-1-price-buynow(planId=`${plan["_id"]}`) order now
+          .featured-plan-1-1-want-to-buy(planId=`${plan["_id"]}`) Want to rate us!  
+      .featured-plan-1-2
+        img(src=`${plan["planImage"]}`)
+    .featured-plan-2
+      .lower-section-feature-plan-icons-chote
+        
+      .lower-section-feature-plan-icons-chote
+ .plans-describe-section-with-review
+  .plans-describe-section-with-review-1
+    img(src=`${plan["planImage"]}`)
+  .plans-describe-section-with-review-2
+    .my-review-rating
+      | Ratings  : 
+      input#my-review-rating(type='text')
+    .my-review-message
+      | Message :
+      input#my-review-message(type='text')
+    .my-review-section-submit(planId=`${plan["_id"]}`) Submit
+    .my-review-section-cancel cancel       

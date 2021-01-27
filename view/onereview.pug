@@ -1,0 +1,11 @@
+.my-review-section-container-1-review
+  .my-review-section-container-1-review-image
+    img(src=`${review["planId"]}` alt='')
+  .my-review-section-container-1-review-edit
+    .my-review-section-container-1-review-edit-button(mainPlanId=`${review.bookedOn}`)
+      | Edit
+    .my-review-section-container-1-review-edit-content.textarea-no-see
+      textarea#review-message(cols='30' rows='7') #{review["message"]}
+      .my-review-section-container-1-review-edit-content-save-cancel
+        .my-review-section-container-1-review-edit-content-save(reviewId=`${review["_id"]}`) Save
+        .my-review-section-container-1-review-edit-content-cancel cancel

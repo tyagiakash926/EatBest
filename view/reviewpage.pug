@@ -1,0 +1,24 @@
+extends base.pug
+block header
+ include homepageheader.pug
+block content
+ .slider-box
+  .plan-corosel
+    each plan in plans
+     if(plan.duration==2)
+      include plancard2.pug
+     else
+      include plancard1.pug
+  .indicators
+    span#btn1.corosel-active 
+    span#btn2 
+    span#btn3
+    span#btn4
+    span#btn5
+    span#btn6
+    span#btn7
+    span#btn8
+    span#btn9
+block scripts
+ script(src="https://js.stripe.com/v3/")
+ script(src="../js/reviewpage.js") 

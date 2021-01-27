@@ -1,0 +1,36 @@
+extends base.pug
+block header
+  include homepageheader.pug
+block content
+ .profile-background-container
+  .profile-content-container
+    .container-profile-page
+      .profile-image
+        img(src=user.pImage)
+      label(for='imgUpload')
+        .profile-img-text
+          h1 change the profile
+          i.fas.fa-camera
+        input#imgUpload(type='file' name='image' style='display: none;')
+      .profile-image-name
+        .profile-image-name-n #{user.name}
+        .edit-profile-info Edit
+  .container-profile-info
+    input#name-edit-profile(type='name' placeholder='Name' value=`${user["name"]}`)
+    input#email-edit-profile(type='email' placeholder='Email' value=`${user["email"]}`)
+    input#pw-edit-profile(type='password' placeholder='Password' value=`${user["password"]}`)
+    input#cpw-edit-profile(type='password' placeholder='Confirm Password' value=`${user["confirmPassword"]}`)
+    .save-and-cancel-btn
+      #profile-edit-save-btn.save-btn Save
+      #profile-edit-cancel-btn.cancel Cancel
+ if(user.reviewPlans)
+   .my-review-section
+     .my-review-section-heading
+       h1 Want to edit your review!!
+     .my-review-section-container-all-review
+      each review in user.reviewPlans
+       include onereview.pug
+ else
+  span
+block scripts
+ script(src="./js/profile.js") 

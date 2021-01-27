@@ -1,0 +1,53 @@
+extends base.pug
+block content
+ .container-of-review
+  ul.nav.nav-pills
+    li.active1
+      a(data-toggle='tab' planId="600fa2db22056a55980b2bbf") Momos
+    li
+      a(data-toggle='tab' planId="600fa46822056a55980b2bc0") Burger
+    li
+      a(data-toggle='tab' planId="600fa46a22056a55980b2bc1") Pizza
+    li
+      a(data-toggle='tab' planId="600fa46e22056a55980b2bc4") Mojito
+    li
+      a(data-toggle='tab' planId="600fa46c22056a55980b2bc3") Salad
+    li
+      a(data-toggle='tab' planId="600fa46b22056a55980b2bc2") chicken
+    li
+      a(data-toggle='tab' planId="600fa46f22056a55980b2bc5") Healty
+    li
+      a(data-toggle='tab' planId="600fa47022056a55980b2bc6") Aloo chaap
+    li
+      a(data-toggle='tab' planId="600fa48f22056a55980b2bc7") Coffee
+  .tab-content
+    .tab-pane
+      .row.review-row
+        each review in momos
+         include reviewcard.pug
+      .row.review-no-see
+        each review in burger
+         include reviewcard.pug
+      .row.review-no-see
+        each review in pizza
+         include reviewcard.pug
+      .row.review-no-see
+        each review in mojito
+         include reviewcard.pug
+      .row.review-no-see
+        each review in salad
+         include reviewcard.pug
+      .row.review-no-see
+        each review in chicken
+         include reviewcard.pug
+      .row.review-no-see
+        each review in healty
+         include reviewcard.pug
+      .row.review-no-see
+        each review in aloochaap
+         include reviewcard.pug
+      .row.review-no-see
+        each review in coffee
+         include reviewcard.pug
+block scripts
+ script(src="./js/allreview.js") 
