@@ -603,7 +603,7 @@
 
 .last-section{
     height: 30vh;
-    background: rgb(19, 18, 18);
+    background: #34495e;
     display: flex;
     flex-direction: column;
     align-items: center;
