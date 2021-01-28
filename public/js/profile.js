@@ -14,6 +14,7 @@ profileImage.addEventListener("change" , async function(e){
     console.log(file);
     let formData = new FormData();
     formData.append("user" , file);
+    console.log(formData);
     let obj = await axios.patch("https://eat-beast.herokuapp.com/api/users/updateprofilephoto" , formData);
     console.log(obj);
     if(obj.data.message){
