@@ -66,7 +66,8 @@ async function login(req,res){
             let user = loggedInUser[0];
             if(user.password==password){
                 // token dena h 
-                const token = jwt.sign({id: user["_id"]},SECRET_KEY)
+                const id = user["_id"];
+                const token = jwt.sign({ id },SECRET_KEY)
                 res.cookie("jwt", token, { httpOnly: true });
                 res.json({
                     message:"LoggedIn successfully",

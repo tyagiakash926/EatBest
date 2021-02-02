@@ -24,10 +24,10 @@ loginBtn.addEventListener("click", async function(e){
     try{
         e.preventDefault(); // prevent page refresh
         if(email.value && password.value){
-            let obj = await axios.post( "https://eat-beast.herokuapp.com/api/users/login" , {email:email.value , password:password.value});
+            let obj = await axios.post( "/api/users/login" , {email:email.value , password:password.value});
             console.log(obj);
             if(obj.data.data){
-                window.location.href = "/";
+                location.assign("/");
             }else{
                 message.innerHTML = obj.data.message;
                 password.value="";

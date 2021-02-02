@@ -1,6 +1,6 @@
 const express = require("express");
-const { signup, login, protectRoute,forgetpassword,resetpassword   } = require("../Controller/authController");
 const userRouter = express.Router();
+const { signup, login, protectRoute,forgetpassword,resetpassword   } = require("../Controller/authController");
 const multer = require("multer");
 
 const storage = multer.diskStorage({
