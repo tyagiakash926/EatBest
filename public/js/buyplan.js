@@ -13,7 +13,7 @@ for(let i=0 ; i<buyPlansButtons.length ; i++){
             }
             else{
                 let planId = buyPlansButtons[i].getAttribute("planid");
-                let session =  await axios.post("https://eat-beast.herokuapp.com/api/booking/createPaymentSession" , {planId : planId });
+                let session =  await axios.post("/api/booking/createPaymentSession" , {planId : planId });
                 let sessId = session.data.session.id;
                 let result = await stripe.redirectToCheckout({ sessionId: sessId });
                 console.log(result);
@@ -32,7 +32,7 @@ for(let i=0 ; i<buyPlansButtons2.length ; i++){
             }
             else{
                 let planId = buyPlansButtons2[i].getAttribute("planid");
-                let session =  await axios.post("https://eat-beast.herokuapp.com/api/booking/createPaymentSession" , {planId : planId });
+                let session =  await axios.post("/api/booking/createPaymentSession" , {planId : planId });
                 let sessId = session.data.session.id;
                 let result = await stripe.redirectToCheckout({ sessionId: sessId });
                 console.log(result);
