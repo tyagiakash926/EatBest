@@ -15,7 +15,7 @@ profileImage.addEventListener("change" , async function(e){
     let formData = new FormData();
     formData.append("user" , file);
     console.log(formData);
-    let obj = await axios.patch("https://eat-beast.herokuapp.com/api/users/updateprofilephoto" , formData);
+    let obj = await axios.patch("/api/users/updateprofilephoto" , formData);
     console.log(obj);
     if(obj.data.message){
         window.location.reload();
@@ -53,7 +53,7 @@ for(let i=0;i<allsavebtn.length;i++){
         let message =alltextarea[i].value;
         let mainPlanId = alleditbtn[i].getAttribute("mainplanid");
         // planModel.find({planImage})
-        let obj = await axios.post(`https://eat-beast.herokuapp.com/api/review/${reviewId}` , {message:message,mainPlanId:mainPlanId});
+        let obj = await axios.post(`/api/review/${reviewId}` , {message:message,mainPlanId:mainPlanId});
         window.location.reload();
     })
 }
