@@ -1,4 +1,5 @@
 const express = require("express");
+// const cors = require('cors');
 const planRouter = require("./Router/planRouter");
 const userRouter  = require("./Router/userRouter");
 const { json } = require("express");
@@ -6,11 +7,16 @@ const path = require('path');
 const join = require("path");
 const viewRouter = require("./Router/viewRouter");
 const reviewRouter = require("./Router/reviewRouter");
-
 const app = express();
+// app.use(cors());
 const cookieParser = require("cookie-parser"); 
 const bookingRouter = require("./Router/bookingRouter");
 
+app.use(function(req,res,next){
+  res.header("Access-Control-Allow-Origin","*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 app.use(cookieParser());
 // it tracks incoming request and see if there is data in the request => the data will be fed in req.body
 app.use(express.json());
