@@ -138,7 +138,7 @@ for(let i=0 ; i<buyPlansButtons.length ; i++){
             }
             else{
                 let planId = buyPlansButtons[i].getAttribute("planid");
-                let session =  await axios.post("https://eat-beast.herokuapp.com/api/booking/createPaymentSession" , {planId : planId });
+                let session =  await axios.post("/api/booking/createPaymentSession" , {planId : planId });
                 let sessId = session.data.session.id;
                 let result = await stripe.redirectToCheckout({ sessionId: sessId });
                 console.log(result);
@@ -157,7 +157,7 @@ for(let i=0 ; i<buyPlansButtons2.length ; i++){
             }
             else{
                 let planId = buyPlansButtons2[i].getAttribute("planid");
-                let session =  await axios.post("https://eat-beast.herokuapp.com/api/booking/createPaymentSession" , {planId : planId });
+                let session =  await axios.post("/api/booking/createPaymentSession" , {planId : planId });
                 let sessId = session.data.session.id;
                 let result = await stripe.redirectToCheckout({ sessionId: sessId });
                 console.log(result);
@@ -194,7 +194,7 @@ for(let i=0;i<want_to_rate_us_Buttons.length;i++){
                 let rating = rating_input[i*2].value;
                 let planId = document.querySelectorAll(".plans-describe-section-with-review-1")[i*2].firstElementChild.getAttribute("src");
                 let mainPlanId = document.querySelectorAll(".my-review-section-submit")[i*2].getAttribute("planId");
-                let obj = await axios.post("https://eat-beast.herokuapp.com/api/review",{message:message,planId:planId,rating:rating,mainPlanId:mainPlanId});
+                let obj = await axios.post("/api/review",{message:message,planId:planId,rating:rating,mainPlanId:mainPlanId});
                 console.log(obj);
                 rating_message[i*2].value ="";
                 rating_input[i*2].value = "";
@@ -225,7 +225,7 @@ for(let i=0;i<want_to_rate_us_Buttons1.length;i++){
                 let rating = rating_input[(i*2) + 1].value;
                 let planId = document.querySelectorAll(".plans-describe-section-with-review-1")[(i*2) + 1].firstElementChild.getAttribute("src");
                 let mainPlanId = document.querySelectorAll(".my-review-section-submit")[(i*2) + 1].getAttribute("planId")
-                let obj = await axios.post("https://eat-beast.herokuapp.com/api/review",{message:message,planId:planId,rating:rating,mainPlanId:mainPlanId});
+                let obj = await axios.post("/api/review",{message:message,planId:planId,rating:rating,mainPlanId:mainPlanId});
                 console.log(obj);
                 rating_message[(i*2) + 1].value ="";
                 rating_input[(i*2) + 1].value = "";
