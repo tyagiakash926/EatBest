@@ -59,6 +59,7 @@ async function signup(req,res){
 }
 async function login(req,res){
     try{
+        console.log("in try of login");
         let {email,password} = req.body;
         let loggedInUser = await userModel.find({email});
         if(loggedInUser.length){
@@ -83,7 +84,7 @@ async function login(req,res){
         }
     }
     catch(error){
-
+      console.log("in catch of login");
     }
 
 }
