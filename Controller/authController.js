@@ -3,11 +3,11 @@ var jwt = require('jsonwebtoken');
 const nodemailer = require("nodemailer");
 const smtpTransport = require("nodemailer-smtp-transport");
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
-// const { SECRET_KEY,GMAIL_ID,GMAIL_PW } = require("../config/secret");
+const secrets = require("../config/secret");
 
-const SECRET_KEY = process.env.SECRET_KEY;
-const GMAIL_ID = process.env.GMAIL_ID;
-const GMAIL_PW = process.env.GMAIL_PW;
+const SECRET_KEY = process.env.SECRET_KEY||secrets.SECRET_KEY;
+const GMAIL_ID = process.env.GMAIL_ID||secrets.GMAIL_ID;
+const GMAIL_PW = process.env.GMAIL_PW||secrets.GMAIL_PW;
 
 
 async function sendEmail(message) {
@@ -85,6 +85,9 @@ async function login(req,res){
     }
     catch(error){
       console.log("in catch of login");
+      res.json({
+        err:error,
+        message:error.message      })
     }
 
 }
