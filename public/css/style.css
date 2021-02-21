@@ -2753,6 +2753,10 @@ justify-content: center;
 }
 
 @media only screen and (max-width: 1024px){
+    .testimonial {
+        padding: 13px;
+        margin-bottom: 23px;
+    }
     .discount-template {
         margin-top: -2%;
     }
@@ -2818,6 +2822,13 @@ justify-content: center;
 
   }
   @media only screen and (max-width: 850px){
+    .testimonial {
+        padding: 8px;
+        margin-bottom: 20px;
+    }
+    .testimonial-wrap {
+        margin: 2px auto;
+    }
     .discount-template {
         margin-top: -2%;
     }
@@ -2837,6 +2848,15 @@ justify-content: center;
 
   }
   @media only screen and (max-width: 735px){
+    .testimonial {
+        margin-bottom: 7px;
+    }
+    .fa-star {
+        font-size: 15px;
+    }   
+    .testimonial-author strong {
+        font-size: 15px; 
+    }
     .discount-template {
         margin-top: -2%;
     }
@@ -2907,6 +2927,10 @@ justify-content: center;
     }
   }
   @media only screen and (max-width: 656px){
+    .image-plus-name img {
+        height: 60px;
+        width: 60px;
+    }
     .discount-template {
         margin-top: -2%;
     }
@@ -2950,6 +2974,22 @@ justify-content: center;
     }  
   }
   @media only screen and (max-width: 550px){
+    .testimonial-author strong {
+        font-size: 17px;
+    }
+    .review-showcase-section {
+        height: 215vh;
+    }
+    .review-showcase-section-1 {
+        flex-direction: column;
+    }
+    .review-showcase-section-2 {
+        flex-direction: column;
+    }
+    .review-showcase-section-1-1,.review-showcase-section-1-2, .review-showcase-section-2-1,.review-showcase-section-2-2{
+        width: 100%;
+    }
+    
     .discount-template {
         margin-top: -2%;
     }
@@ -3158,14 +3198,23 @@ justify-content: center;
         }
     }
     @media only screen and (max-width: 360px){
+        .testimonial {
+            padding: 3px;
+        }        
         .landing-page {
-            height: 55vh;
+            height: 50vh;
         }
         .landing-page-cotent {
-            height: 40vh;
+            height: 35vh;
         }
         .lower-section-landing-page {
             height: 15vh;
+        }
+        .landing-page-image-content {
+            margin-top: 10%;
+        }
+        .landing-page-written-content {
+            margin-top: 10%;
         }
         .lower-section-landing-page-heading-icons-chote{
             margin-top: -3%;
