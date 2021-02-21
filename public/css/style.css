@@ -2751,3 +2751,449 @@ justify-content: center;
     height: 100%;
     width: 50%;
 }
+
+@media only screen and (max-width: 1024px){
+    .discount-template {
+        margin-top: -2%;
+    }
+    .landing-page {
+        height: 115vh;
+    }
+    .landing-page-cotent {
+        height: 75vh;
+    }
+    .lower-section-landing-page-heading-icons h1 {
+        font-size: 8px;
+    }
+    .lower-section-landing-page-heading-icons img {
+        margin-left: 24%;
+        margin-top: 6%;
+    }
+    /* .lower-section-landing-page-heading-icons {
+        height: 61%;
+    } */
+    .discount-template-heading h1 {
+       font-size: 20px;
+    }
+    .discount-template-subheading p {
+        font-size: 13px;
+    }
+    .discount-template-btn {
+        height: 20px;
+        width: 78px;
+        font-size: 12px;
+    }
+    .buynow-btn {
+        font-size: 12px;
+    }
+    .explore-btn {
+        font-size: 12px;
+    }
+    .features-templates-info-content p {
+        font-size: 10px;
+    }
+    .landing-page-written-content-title h1 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .landing-page-written-content-title span{
+        font-size: 30px;
+    }
+    .landing-page-written-content-subtitle {
+        font-size: 9px;
+    }
+    .lower-section-landing-page-heading {
+        font-size: 40px;
+    }
+    .featured-plan-1-2 {
+        height: 90%;
+        width: 46%;
+        margin-left: 34%;
+    }
+    .featured-plan-1-1 {
+        top: 14%;
+        left: 16%;
+    }
+
+
+  }
+  @media only screen and (max-width: 850px){
+    .discount-template {
+        margin-top: -2%;
+    }
+    .features-templates-info-content h1 {
+        font-size: 20px;
+    }
+    .buynow-btn {
+        font-size: 12px;
+        height: 33px;
+        width: 45%;
+    }
+    .explore-btn {
+        font-size: 12px;
+        height: 33px;
+        width: 45%;
+    }
+
+  }
+  @media only screen and (max-width: 735px){
+    .discount-template {
+        margin-top: -2%;
+    }
+    .landing-page {
+        height: 100vh;
+    }
+    .landing-page-cotent {
+        height: 60vh;
+    }
+    .lower-section-landing-page-heading-icons {
+        height: 55%;
+    }
+    .lower-section-landing-page-heading-icons h1 {
+        display: none;
+    }
+    .lower-section-landing-page-heading-icons img {
+        margin-left: 16%;
+        margin-top: 9%;
+    }
+    .featured-plan-1-1-heading h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .featured-plan-1-1-subheading p {
+        font-size: 9px;
+    }
+    .featured-plan-1-1-price-buynow {
+        height: 30px;
+        width: 40%;
+        font-size: 10px;
+        margin-left: -21%;
+    }
+    .featured-plan-1-1-price-heading {
+        /* font-family: 'Anton',sans-serif; */
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .featured-plan-1-2 {
+        height: 80%;
+    }
+    .last-section {
+        height: 25vh;
+    }
+    .about-us {
+        font-size: 13px;
+    }
+    .ios-app {
+        font-size: 25px;
+    }
+    .android-app {
+        font-size:25px ;
+    }
+    .fa-facebook,.fa-twitter-square,.fa-instagram,.fa-snapchat-square {
+        font-size: 25px;
+    }
+    .explore-btn {
+        font-size: 9px;
+        height: 30px;
+        width: 38%;
+    }
+    .buynow-btn{
+        font-size: 9px;
+        height: 30px;
+        width: 38%;
+    }
+    .showcase-ul {
+        width: 90%;
+    }
+  }
+  @media only screen and (max-width: 656px){
+    .discount-template {
+        margin-top: -2%;
+    }
+    .landing-page-cotent {
+        height: 50vh;
+    }
+    .landing-page {
+        height: 90vh;
+    }
+    .features-templates-info-icon {
+        height: 20%
+    }
+    .features-templates-info-content h1 {
+        font-size: 16px;
+    }
+    .explore-btn {
+        font-size: 6px;
+        height: 25px;
+    }
+    .buynow-btn {
+        font-size: 6px;
+        height: 25px;
+    }   
+    .about-us {
+        font-size: 11px;
+    }
+    .lower-sec h4 {
+        font-size: 13px;
+    }
+    .ios-app {
+        font-size: 20px;
+    }
+    .android-app {
+        font-size:20px ;
+    }
+    .fa-facebook,.fa-twitter-square,.fa-instagram,.fa-snapchat-square {
+        font-size: 20px;
+    }   
+    .lower-section-landing-page-heading {
+        font-size: 30px;
+    }  
+  }
+  @media only screen and (max-width: 550px){
+    .discount-template {
+        margin-top: -2%;
+    }
+    .landing-page {
+        height: 80vh;
+    }
+    .lower-section-landing-page {
+        height: 30vh;
+    }
+    .lower-section-landing-page-heading {
+        font-size: 25px;
+    }
+    .lower-section-landing-page-heading-icons img {
+        margin-left: 0%;
+        margin-top: -7%;
+        height: 100%;
+        /* font-size: 2px; */
+        /* margin: auto; */
+        width: 100%;
+    }
+    .lower-section-landing-page-heading-icons {
+        height: 43%;
+        width: 16%;
+    }
+    .img-changer {
+        height: 90%;
+        width: 90%;
+        /* object-fit: contain; */
+        /* background-color: #19c4ad; */
+        margin-left: -5%;
+    }
+    .landing-page-written-content-subtitle {
+        font-size: 8px;
+    }
+    .landing-page-written-content-title span {
+        font-size: 25px;
+    }
+    .landing-page-written-content-title h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .showcase-li {
+        /* font-size: 8px; */
+        height: 21px;
+        /* width: 34%; */
+        width: 67px;
+    }
+    .showcase-li a {
+        font-size: 10px;
+    }
+    .featured-plan-1-1-price-heading {
+        /* font-family: 'Anton',sans-serif; */
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .featured-plan-1-1-price-buynow {
+        width: 42%;
+        font-size: 8px;
+    }
+    .featured-plan-1-1-subheading p {
+        font-size: 7px;
+    }
+    .featured-plan-1-1-heading h1 {
+        font-size: 21px;
+        letter-spacing: 1px;
+    }
+    .features-templates-info-content p {
+        font-size: 8px;
+    }
+    .features-templates-info-content h1 {
+        font-size: 12px;
+    }
+    .discount-template {
+        margin-top: -2%;
+    }
+}
+    @media only screen and (max-width: 450px){
+        .header-nav-bar-icon {
+            margin-left: 2%;
+            height: 100%;
+        }
+        .vclass-resp{
+            display: none;
+        }
+        .header-nav-bar{
+            flex-direction: column;
+        }
+        .nav-res-icon {
+            /* margin-left: 35%; */
+            height: 30%;
+        }
+        .height-resp{
+            height: 38vh;
+        }
+        .aligncentre-resp {
+            flex-direction: column;
+            align-items: center;
+            /* display: none; */
+        }
+        .img-changer {
+            margin-top: 20%;
+        }
+        .landing-page-written-content-title h1 {
+            font-size: 15px;
+        }
+        .landing-page-written-content-title span {
+            font-size: 20px;
+        }
+        .featured-plan {
+            height: 70vh;
+        }
+        .featured-plan-1-1-heading span {
+            font-size: 40px;
+        }
+        .featured-plan-1-1-heading h1 {
+            font-size: 18px;
+        }
+        .fa-star {
+            font-size: 10px;
+        }
+        .featured-plan-1-1-price-heading {
+            /* font-family: 'Anton',sans-serif; */
+            margin-left: -30%;
+        }
+        .featured-plan-1-1-price-buynow {
+            width: 49%;
+            font-size: 7px;
+        }
+        .explore-btn {
+            font-size: 7px;
+            height: 21px;
+            width: 50%;
+        }
+        .features-heading h1 {
+            font-size: 15px;
+        }
+        .features-heading p {
+            font-size: 11px;
+        }
+        .buynow-btn {
+            font-size: 7px;
+            height: 21px;
+            width: 50%;
+        }
+        .ios-app ,.android-app {
+            display: none;
+        }
+        .features-templates-info {
+            height: 48%;
+            width: 34%;
+        }
+        .features-templates {
+            display: flex;
+            flex-wrap: wrap;
+            height: 70%;
+        }
+        .features-templates-info-icon {
+            height: 33%;
+            width: 60%;
+        }
+        .landing-page-written-content-Explore {
+            width: 70%;
+        }
+        .buynow-btn,.explore-btn {
+            font-size: 7px;
+            height: 22px;
+            width: 37%;
+        }
+        .discount-template {
+            margin-top: -2%;
+        }
+    }
+    @media only screen and (max-width: 375px){
+        .lower-section-landing-page {
+            height: 21vh;
+        }
+        .landing-page {
+            height: 71vh;
+        }
+        .buynow-btn,.explore-btn {
+            font-size: 5px;
+            height: 22px;
+            width: 37%;
+        }
+        .featured-plan-1-1 {
+            top: 2%;
+            left: 15%;
+        }
+        .featured-plan {
+            height: 60vh;
+        }
+        .landing-page-written-content-title h1 {
+            font-size: 12px;
+        }
+        .landing-page-written-content-title span {
+            font-size: 18px;
+        }
+        .discount-template-heading h1 {
+            font-size: 15px;
+        }
+        .discount-template-subheading p {
+            font-size: 10px;
+        }
+        .discount-template {
+            margin-top: -2%;
+        }
+    }
+    @media only screen and (max-width: 360px){
+        .landing-page {
+            height: 55vh;
+        }
+        .landing-page-cotent {
+            height: 40vh;
+        }
+        .lower-section-landing-page {
+            height: 15vh;
+        }
+        .lower-section-landing-page-heading-icons-chote{
+            margin-top: -3%;
+        }
+       
+            .lower-section-landing-page-heading-icons {
+                margin-top: 3%;
+            }
+        
+        .lower-section-landing-page-heading {
+            font-size: 15px;
+            margin-top: 5%;
+        }
+        .landing-page-written-content-subtitle {
+            font-size: 7px;
+            width: 85%;
+        }
+        .lower-sec h4 {
+            font-size: 9px;
+        }
+        .featured-plan-1-1-price-buynow {
+            width: 58%;
+            font-size: 7px;
+        }
+        .discount-template {
+            margin-top: -2%;
+        }
+    }
+
+  
+
