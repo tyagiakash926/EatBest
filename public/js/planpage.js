@@ -56,3 +56,4 @@ window.addEventListener("load" , function(){
     setTimeout(typeWords ,  text1.length == word1.length ? 1000 : 100);
 }
 })
+

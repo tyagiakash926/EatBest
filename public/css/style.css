@@ -55,7 +55,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 100;
+    z-index: 10000;
 }
 .header-nav-bar-icon{
     margin-left: 5%;
@@ -2752,11 +2752,12 @@ justify-content: center;
     width: 50%;
 }
 
+.mystyle{
+    margin: 1%; 
+    width: 30%;
+}
+
 @media only screen and (max-width: 1024px){
-    .testimonial {
-        padding: 13px;
-        margin-bottom: 23px;
-    }
     .discount-template {
         margin-top: -2%;
     }
@@ -2818,16 +2819,15 @@ justify-content: center;
         top: 14%;
         left: 16%;
     }
+    .dashboard-section-div-1-button-icon {
+        width: 40%;
+    }
 
 
   }
   @media only screen and (max-width: 850px){
-    .testimonial {
-        padding: 8px;
-        margin-bottom: 20px;
-    }
-    .testimonial-wrap {
-        margin: 2px auto;
+    .container h1 {
+        font-size: 20px;
     }
     .discount-template {
         margin-top: -2%;
@@ -2845,18 +2845,41 @@ justify-content: center;
         height: 33px;
         width: 45%;
     }
+    .bcontainer p {
+        font-size: 13px;
+    }
+    .bcontainer h1{
+        font-size: 18px;
+    }    
+    .bcontainer input {
+        padding: 25px;
+    }
+    .bcontainer {
+        width: 59%;
+    }
+    .bcontainer {
+        width: 100%;
+        margin: 0px;
+        margin-left: 0%;
+    }
+    .plans-section-2-plans-plan-no-1 {
+        width: 34%;
+    }
+    .plans-section-1-heading span {
+        font-size: 33px;
+    }
+    .plans-section-1-heading h1 {
+        /* font-family: 'Anton',sans-serif; */
+        font-size: 130%;
+    }
 
   }
   @media only screen and (max-width: 735px){
-    .testimonial {
-        margin-bottom: 7px;
-    }
-    .fa-star {
-        font-size: 15px;
-    }   
-    .testimonial-author strong {
-        font-size: 15px; 
-    }
+
+    input {
+            padding: 20px;
+            font-size: 0.7rem;
+        }
     .discount-template {
         margin-top: -2%;
     }
@@ -2925,12 +2948,49 @@ justify-content: center;
     .showcase-ul {
         width: 90%;
     }
+    .bcontainer p {
+        font-size: 10px;
+    }
+    .bcontainer h1{
+        font-size: 16px;
+    }    
+    .bcontainer input {
+        padding: 22px;
+    }
+    .plans-section-1-2-heading-plans p{
+        display: none;
+    }
+    .plans-section-1-2-heading-plans img {
+        width: 72%;
+        margin-top: -12%;
+    }
+    .plans-section-1-2-heading-plans {
+        width: 13%;
+        height: 57%;
+    }
+    .dashboard-section-div-2-heading h1 {
+        font-size: 14px;
+    }
+    .dashboard-section-div-2-heading h2 {
+        line-height: 1px;
+        font-size: 10px;
+    }
+    .dashboard-section-div-2-running-svg img {
+        /* position: absolute; */
+        top: 10%;
+        left: 3%;   
+    }  
+    .nav li {
+        margin: 0px 5px;
+    }
+    .nav li a {
+        font-size: 10px;
+    }   
+    
+    
+    
   }
   @media only screen and (max-width: 656px){
-    .image-plus-name img {
-        height: 60px;
-        width: 60px;
-    }
     .discount-template {
         margin-top: -2%;
     }
@@ -2972,24 +3032,23 @@ justify-content: center;
     .lower-section-landing-page-heading {
         font-size: 30px;
     }  
-  }
-  @media only screen and (max-width: 550px){
-    .testimonial-author strong {
-        font-size: 17px;
+    .bcontainer input {
+        padding: 16px;
+    }  
+    .all-items-filter h1 {
+        font-size: 25px;
     }
-    .review-showcase-section {
-        height: 215vh;
-    }
-    .review-showcase-section-1 {
-        flex-direction: column;
-    }
-    .review-showcase-section-2 {
-        flex-direction: column;
-    }
-    .review-showcase-section-1-1,.review-showcase-section-1-2, .review-showcase-section-2-1,.review-showcase-section-2-2{
-        width: 100%;
+    .plans-section-2-plans-plan-no-1 {
+        width: 40%;
     }
     
+      
+  }
+  @media only screen and (max-width: 550px){
+    .container button {
+        font-size: 10px;
+        padding: 8px 15px;
+    }
     .discount-template {
         margin-top: -2%;
     }
@@ -3065,8 +3124,71 @@ justify-content: center;
     .discount-template {
         margin-top: -2%;
     }
+    .plans-section-1-2-discount {
+        height: 88%;
+    }
+    .plans-section-1-2-discount h1 {
+        font-size: 12px;
+        margin-top: 43%;
+    }
+    .plans-section-2-plans-plan-no-1 {
+        width: 51%;
+        margin-top: 22%;
+    }
+    .dashboard-section-div-2 {
+        display: none!important;
+    }
+    .dashboard-section-div-1-button-url {
+        font-size: 12px;
+    }
+    .dashboard-section-div-1-button-icon {
+        font-size: 10px;
+        height: 100%;
+    }
+    .dashboard-section-div-1-button {
+        height: 10%;
+    }   
+    .mystyle {
+        margin: 1%;
+        width: 98%;
+    }         
 }
     @media only screen and (max-width: 450px){
+        .nav li {
+            margin: 0px 3px;
+            height: 60%;
+        }
+        .nav li a {
+            font-size: 6px;
+        }        
+        .sign-in-container {
+            left: 0px;
+            width: 100%;
+            z-index: 0;
+            height: 156%;
+     }
+     .sign-up-container {
+            height: 60%;
+            left: 0;
+            width: 100%;
+            opacity: 1;
+            z-index: 1;
+     }
+     .overlay-container {
+         display: none;
+     }
+     .big-container {
+         height: 140vh;
+     }
+     .container {
+         min-height: 480px;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+     }
+     .social-container {
+        display: block;
+     }
         .header-nav-bar-icon {
             margin-left: 2%;
             height: 100%;
@@ -3161,8 +3283,24 @@ justify-content: center;
         .discount-template {
             margin-top: -2%;
         }
+        .plans-section-1-2-heading-plans {
+            height: 37%;
+        }
+        .plans-section-2-plans-plan-no-1 {
+            width: 60%;
+            margin-top: 30%;
+        }
+        .plans-section-1-heading span {
+            font-size: 20px;
+        }
+        .plans-section-1-heading h1 {
+            /* font-family: 'Anton',sans-serif; */
+            font-size: 111%;
+        }  
+        
     }
     @media only screen and (max-width: 375px){
+        
         .lower-section-landing-page {
             height: 21vh;
         }
@@ -3196,25 +3334,20 @@ justify-content: center;
         .discount-template {
             margin-top: -2%;
         }
+        .plans-section-2-plans-plan-no-1 {
+            width: 75%;
+            margin-top: 35%;
+        }        
     }
     @media only screen and (max-width: 360px){
-        .testimonial {
-            padding: 3px;
-        }        
         .landing-page {
-            height: 50vh;
+            height: 55vh;
         }
         .landing-page-cotent {
-            height: 35vh;
+            height: 40vh;
         }
         .lower-section-landing-page {
             height: 15vh;
-        }
-        .landing-page-image-content {
-            margin-top: 10%;
-        }
-        .landing-page-written-content {
-            margin-top: 10%;
         }
         .lower-section-landing-page-heading-icons-chote{
             margin-top: -3%;
@@ -3243,6 +3376,3 @@ justify-content: center;
             margin-top: -2%;
         }
     }
-
-  
-
