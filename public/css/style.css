@@ -2758,6 +2758,10 @@ justify-content: center;
 }
 
 @media only screen and (max-width: 1024px){
+    .plans-section-2-plans-plan-no-1-1 {
+        width: 29%;
+    }
+    
     .testimonial {
         padding: 13px;
         margin-bottom: 23px;
@@ -2830,6 +2834,10 @@ justify-content: center;
 
   }
   @media only screen and (max-width: 850px){
+    .plans-section-2-plans-plan-no-1-1 {
+        margin-top: 16%;
+        width: 34%
+    }
     .testimonial {
         padding: 8px;
         margin-bottom: 20px;
@@ -3010,6 +3018,9 @@ justify-content: center;
     
   }
   @media only screen and (max-width: 656px){
+    .plans-section-2-plans-plan-no-1-1 {
+        width: 40%;
+    }    
     .image-plus-name img {
         height: 60px;
         width: 60px;
@@ -3068,6 +3079,10 @@ justify-content: center;
       
   }
   @media only screen and (max-width: 550px){
+    .plans-section-2-plans-plan-no-1-1 {
+        margin-top: 25%;
+        width: 55%;
+    }
     .container button {
         font-size: 10px;
         padding: 8px 15px;
@@ -3193,6 +3208,9 @@ justify-content: center;
     }         
 }
     @media only screen and (max-width: 450px){
+        .plans-section-2-plans-plan-no-1-1 {
+            width: 65%;
+        }        
         .nav li {
             margin: 0px 3px;
             height: 60%;
