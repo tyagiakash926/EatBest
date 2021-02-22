@@ -37,7 +37,7 @@
     background: white;
     position: fixed;
     background-image: url('/images/Bean Eater-0.8s-203px.gif');
-    z-index: 9999;
+    z-index: 10000;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -55,7 +55,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 10000;
+    z-index: 9999;
 }
 .header-nav-bar-icon{
     margin-left: 5%;
@@ -2758,6 +2758,10 @@ justify-content: center;
 }
 
 @media only screen and (max-width: 1024px){
+    .testimonial {
+        padding: 13px;
+        margin-bottom: 23px;
+    }
     .discount-template {
         margin-top: -2%;
     }
@@ -2826,6 +2830,13 @@ justify-content: center;
 
   }
   @media only screen and (max-width: 850px){
+    .testimonial {
+        padding: 8px;
+        margin-bottom: 20px;
+    }
+    .testimonial-wrap {
+        margin: 2px auto;
+    }
     .container h1 {
         font-size: 20px;
     }
@@ -2875,7 +2886,15 @@ justify-content: center;
 
   }
   @media only screen and (max-width: 735px){
-
+    .testimonial {
+        margin-bottom: 7px;
+    }
+    .fa-star {
+        font-size: 15px;
+    }   
+    .testimonial-author strong {
+        font-size: 15px; 
+    }
     input {
             padding: 20px;
             font-size: 0.7rem;
@@ -2991,6 +3010,10 @@ justify-content: center;
     
   }
   @media only screen and (max-width: 656px){
+    .image-plus-name img {
+        height: 60px;
+        width: 60px;
+    }
     .discount-template {
         margin-top: -2%;
     }
@@ -3049,6 +3072,22 @@ justify-content: center;
         font-size: 10px;
         padding: 8px 15px;
     }
+    .testimonial-author strong {
+        font-size: 17px;
+    }
+    .review-showcase-section {
+        height: 215vh;
+    }
+    .review-showcase-section-1 {
+        flex-direction: column;
+    }
+    .review-showcase-section-2 {
+        flex-direction: column;
+    }
+    .review-showcase-section-1-1,.review-showcase-section-1-2, .review-showcase-section-2-1,.review-showcase-section-2-2{
+        width: 100%;
+    }
+    
     .discount-template {
         margin-top: -2%;
     }
@@ -3340,6 +3379,9 @@ justify-content: center;
         }        
     }
     @media only screen and (max-width: 360px){
+        .testimonial {
+            padding: 3px;
+        }        
         .landing-page {
             height: 55vh;
         }
