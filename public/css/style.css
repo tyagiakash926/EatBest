@@ -2758,6 +2758,26 @@ justify-content: center;
 }
 
 @media only screen and (max-width: 1024px){
+    .plan-describe-page-detail-heading h2 {
+        font-size: 30px;
+    }
+    .plan-describe-page-detail-heading h1 {
+        font-size: 35px;
+        line-height: 18px;
+    }
+    .plan-describe-page-detail-subheading p {
+        font-size: 13px;
+    }
+    .plan-describe-page-detail-price {
+        font-size: 27px;
+    }
+    .plan-describe-page-detail-buyme {
+        width: 47%;
+        font-size: 15px;
+    }    
+    .plan-describe-page-review-button {
+        font-size: 13px;
+    }
     .plans-section-2-plans-plan-no-1-1 {
         width: 29%;
     }
@@ -2834,6 +2854,28 @@ justify-content: center;
 
   }
   @media only screen and (max-width: 850px){
+    .featured-plan-1-1-want-to-buy {
+        font-size: 16px;
+        }
+        .plan-describe-page-image img {
+            width: 80%;
+            height: 85%;
+            margin-left: 10%;
+        }
+        .plan-describe-page-detail-heading h1 {
+            font-size: 26px;
+            line-height: 9px;
+        }
+        .plan-describe-page-detail-buyme {
+            height: 65%;
+            width: 51%;
+            font-size: 10px;
+            margin: auto;
+        }
+        .plan-describe-page-review-button {
+            font-size: 10px;
+            height: 7%;
+        }
     .plans-section-2-plans-plan-no-1-1 {
         margin-top: 16%;
         width: 34%
@@ -2894,6 +2936,9 @@ justify-content: center;
 
   }
   @media only screen and (max-width: 735px){
+    .featured-plan-1-1-want-to-buy {
+        font-size: 14px;
+        }
     .testimonial {
         margin-bottom: 7px;
     }
@@ -3018,6 +3063,16 @@ justify-content: center;
     
   }
   @media only screen and (max-width: 656px){
+    .my-review-section-submit ,.my-review-section-cancel{
+        width: 30%;
+    }
+    .featured-plan-1-1-want-to-buy {
+        font-size: 13px;
+        }
+    .indicators span {
+        width: 6px;
+        height: 10px;
+    }
     .plans-section-2-plans-plan-no-1-1 {
         width: 40%;
     }    
@@ -3079,6 +3134,22 @@ justify-content: center;
       
   }
   @media only screen and (max-width: 550px){
+    .featured-plan-1-1-want-to-buy {
+        font-size: 12px;
+        }
+    .plan-describe-page-detail-heading h1 {
+        font-size: 19px;
+        line-height: 5px;
+    }
+    .plan-describe-page-detail-subheading p {
+        font-size: 9px;
+    }
+    .plan-describe-page-detail-price {
+        font-size: 18px;
+    }
+    .plan-describe-page-detail-buyme {
+        width: 60%;
+    }
     .plans-section-2-plans-plan-no-1-1 {
         margin-top: 25%;
         width: 55%;
@@ -3208,6 +3279,76 @@ justify-content: center;
     }         
 }
     @media only screen and (max-width: 450px){
+        .plans-describe-section-with-review-2,.plans-describe-section-with-review-1 {
+            height: 50%;
+            width: 100%;
+        }
+        .plans-describe-section-with-review {
+            height: 65vh;
+        }
+        .my-review-section-submit,.my-review-section-cancel{
+            width: 20%;
+            height: 7%;
+            font-size: 10px;
+            margin-top: -3%;
+            margin-left: 60%;
+        }
+        .plans-describe-section-with-review {
+            flex-direction: column;
+        }
+        .plans-describe-section-with-review-1 img {
+            height: 52%;
+            width: 34%;
+            margin-top: 5%;
+        }
+        .my-review-rating,.my-review-message {
+            height: 29%;
+            width: 58%;
+            font-size: 14px;
+        }
+        .plans-describe-section-with-review-2 {
+            margin-top: -20%;
+        }
+        .featured-plan-1-1-want-to-buy {
+            font-size: 10px;
+            }
+        .indicators span {
+            width: 7px;
+            height: 6px;
+        }
+        .indicators {
+            left: 32%;
+        }
+        .plan-describe-page-detail-image {
+            flex-direction: column;
+        }
+        .plan-describe-page-detail {
+            width: 100%;
+        }
+        .plan-describe-page-detail-buyme {
+            width: 60%;
+            height: 130%;
+        }
+        .plan-describe-page-review-button {
+            font-size: 10px;
+            height: 13%;
+        }
+        .plan-describe-page-detail-heading h2 {
+            text-align: center;
+        }
+        .plan-describe-page-detail-subheading p {
+            font-size: 13px;
+            text-align: center;
+        }
+        .plan-describe-page-image img {
+            width: 70%;
+            height: 70%;
+            margin-top: -13%;
+            margin-left: 72%;
+        }
+        .plan-describe-page-plus-review-page {
+            height: 65vh;
+        }
         .plans-section-2-plans-plan-no-1-1 {
             width: 65%;
         }        
@@ -3397,6 +3538,14 @@ justify-content: center;
         }        
     }
     @media only screen and (max-width: 360px){
+        .indicators {
+            left: 19%;
+            transform: translateX(-16%);
+        }
+        .indicators span {
+            width: 7px;
+            height: 7px;
+        }
         .testimonial {
             padding: 3px;
         }        

@@ -181,9 +181,21 @@ for(let i=0;i<want_to_rate_us_Buttons.length;i++){
         if(allLis.length < 6){
             window.location.href = "/login";
         }
+        if(document.querySelectorAll(".plans-describe-section-with-review")[i*2].classList.contains("vclass-resp")){
+            document.querySelectorAll(".plans-describe-section-with-review")[i*2].classList.remove("vclass-resp")
+        }
+        else{
+            document.querySelectorAll(".plans-describe-section-with-review")[i*2].classList.add("vclass-resp")
+        }
         want_to_rate_us_Buttons[i].parentElement.parentElement.parentElement.classList.add("plan-no-see")
         want_to_rate_us_Buttons[i].parentElement.parentElement.parentElement.parentElement.lastElementChild.classList.remove("plan-no-see");
         document.querySelectorAll(".my-review-section-cancel")[i*2].addEventListener("click",function(){
+            if(document.querySelectorAll(".plans-describe-section-with-review")[i*2].classList.contains("vclass-resp")){
+                document.querySelectorAll(".plans-describe-section-with-review")[i*2].classList.remove("vclass-resp")
+            }
+            else{
+                document.querySelectorAll(".plans-describe-section-with-review")[i*2].classList.add("vclass-resp")
+            }
             want_to_rate_us_Buttons[i].parentElement.parentElement.parentElement.parentElement.lastElementChild.classList.add("plan-no-see");
             want_to_rate_us_Buttons[i].parentElement.parentElement.parentElement.classList.remove("plan-no-see")
         })
@@ -212,9 +224,21 @@ for(let i=0;i<want_to_rate_us_Buttons1.length;i++){
         if(allLis.length < 6){
             window.location.href = "/login";
         }
+        if(document.querySelectorAll(".plans-describe-section-with-review")[(i*2) + 1].classList.contains("vclass-resp")){
+            document.querySelectorAll(".plans-describe-section-with-review")[(i*2)+1].classList.remove("vclass-resp")
+        }
+        else{
+            document.querySelectorAll(".plans-describe-section-with-review")[(i*2)+1].classList.add("vclass-resp")
+        }
         want_to_rate_us_Buttons1[i].parentElement.parentElement.parentElement.parentElement.classList.add("plan-no-see");
         want_to_rate_us_Buttons1[i].parentElement.parentElement.parentElement.parentElement.parentElement.lastElementChild.classList.remove("plan-no-see");
         document.querySelectorAll(".my-review-section-cancel")[(i*2) + 1].addEventListener("click",function(){
+            if(document.querySelectorAll(".plans-describe-section-with-review")[(i*2) + 1].classList.contains("vclass-resp")){
+                document.querySelectorAll(".plans-describe-section-with-review")[(i*2)+1].classList.remove("vclass-resp")
+            }
+            else{
+                document.querySelectorAll(".plans-describe-section-with-review")[(i*2)+1].classList.add("vclass-resp")
+            }
             want_to_rate_us_Buttons1[i].parentElement.parentElement.parentElement.parentElement.classList.remove("plan-no-see");
             want_to_rate_us_Buttons1[i].parentElement.parentElement.parentElement.parentElement.parentElement.lastElementChild.classList.add("plan-no-see");
         })
